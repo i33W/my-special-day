@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>LOGIN</div>;
+  return <div>POST CREATE</div>;
 }
