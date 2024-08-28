@@ -1,4 +1,5 @@
 import Button from "@/app/ui/Button";
+import Image from "next/image";
 
 export default function Page() {
   return (
@@ -6,7 +7,10 @@ export default function Page() {
       className="flex justify-center items-center flex-col h-screen"
       style={{ background: "linear-gradient(180deg, #ecfdf5, #f0fdf4, #ffffff,#ffffff)" }}>
       <div className="flex-grow-1 flex justify-center items-center h-full flex-col gap-14 w-full">
-        <div className="w-full text-center font-bold text-xl">나의 특별한 하루</div>
+        <div className="w-full font-bold text-xl flex justify-center items-center flex-col gap-2">
+          <Image src="/logo.png" width={60} height={60} alt="logo" />
+          <div>나의 특별한 하루</div>
+        </div>
 
         <form action="" className="w-full max-w-sm flex justify-center flex-col gap-4">
           <div className="flex flex-col w-full">
